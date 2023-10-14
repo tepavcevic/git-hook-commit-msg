@@ -39,6 +39,7 @@ func main() {
 
 	firstWord := getFirstWord(commitMessage)
 	var validType bool
+
 	for i := range commitType {
 		if commitType[i] == firstWord {
 			validType = true

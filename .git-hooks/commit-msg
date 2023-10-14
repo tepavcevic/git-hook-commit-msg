@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# Determine the operating system
+case "$(uname -s)" in
+  Linux*)   go_program=".git-hooks/commit-msg-hook-linux-amd64";;
+  Darwin*)  go_program=".git-hooks/commit-msg-hook-macos-amd64";;
+  CYGWIN*)  go_program=".git-hooks/commit-msg-hook-windows-amd64.exe";;
+  MINGW*)   go_program=".git-hooks/commit-msg-hook-windows-amd64.exe";;
+  *)        echo "Unsupported OS" ; exit 1 ;;
+esac
+
+# Check if the Go program exists
+if [ ! -f "$go_program" ]; then
+  echo "Go program does not exist for this operating system."
+  exit 1
+fi
+
+# Run the Go program with the commit message file as an argument
+exec "$go_program" "$1"
