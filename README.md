@@ -30,3 +30,7 @@ Allowed messages will be:
 
 
 I've included binaries for linux, windows and macOS (I've only been able to test on linux though)
+
+Implementation in Go is pretty straight forward, I even ommited using regex for matching commit types in favor of a predefined string array that can easily be expanded with new keywords.
+Go was chosen because I wanted to try something different, and while being new to it, it was a lot of fun trying to do it.
+The biggest challenge will be for the binaries to be properly configured so it can be run on different machines :)
