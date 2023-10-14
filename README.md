@@ -33,4 +33,6 @@ I've included binaries for linux, windows and macOS (I've only been able to test
 
 Implementation in Go is pretty straight forward, I even ommited using regex for matching commit types in favor of a predefined string array that can easily be expanded with new keywords.
 Go was chosen because I wanted to try something different, and while being new to it, it was a lot of fun trying to do it.
-The biggest challenge will be for the binaries to be properly configured so it can be run on different machines :)
+The biggest challenge will be for the binaries to be properly configured so it can be run on different OS's
+
+Even though this would be most suited for bash, I can with utmost confidence say that it works with Go (only on my machine as far as I can tell :))
