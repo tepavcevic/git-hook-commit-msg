@@ -35,4 +35,4 @@ Implementation in Go is pretty straight forward, I even ommited using regex for 
 Go was chosen because I wanted to try something different, and while being new to it, it was a lot of fun trying to do it.
 The biggest challenge will be for the binaries to be properly configured so it can be run on different OS's
 
-Even though this would be most suited for bash, I can with utmost confidence say that it works with Go (only on my machine :))
+Even though this would be most suited for bash, I can with utmost confidence say that it works with Go (on my machine at least :))
